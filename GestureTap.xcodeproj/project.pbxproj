@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E46FC95D23A89BC4003F0ECD /* SelectGestureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46FC95C23A89BC4003F0ECD /* SelectGestureController.swift */; };
 		E4C7B600239E167D00F2B376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7B5FF239E167D00F2B376 /* AppDelegate.swift */; };
 		E4C7B602239E167D00F2B376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7B601239E167D00F2B376 /* SceneDelegate.swift */; };
 		E4C7B604239E167D00F2B376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C7B603239E167D00F2B376 /* ViewController.swift */; };
@@ -27,7 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E4C7B5FC239E167D00F2B376 /* GestureTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GestureTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46FC95C23A89BC4003F0ECD /* SelectGestureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGestureController.swift; sourceTree = "<group>"; };
+		E4C7B5FC239E167D00F2B376 /* Gesture Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gesture Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4C7B5FF239E167D00F2B376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4C7B601239E167D00F2B376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E4C7B603239E167D00F2B376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E46FC95B23A89B82003F0ECD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E46FC95C23A89BC4003F0ECD /* SelectGestureController.swift */,
+				E4C7B603239E167D00F2B376 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E4C7B5F3239E167D00F2B376 = {
 			isa = PBXGroup;
 			children = (
@@ -70,7 +81,7 @@
 		E4C7B5FD239E167D00F2B376 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4C7B5FC239E167D00F2B376 /* GestureTap.app */,
+				E4C7B5FC239E167D00F2B376 /* Gesture Demo.app */,
 				E4C7B612239E168100F2B376 /* GestureTapTests.xctest */,
 			);
 			name = Products;
@@ -81,7 +92,7 @@
 			children = (
 				E4C7B5FF239E167D00F2B376 /* AppDelegate.swift */,
 				E4C7B601239E167D00F2B376 /* SceneDelegate.swift */,
-				E4C7B603239E167D00F2B376 /* ViewController.swift */,
+				E46FC95B23A89B82003F0ECD /* ViewController */,
 				E4C7B605239E167D00F2B376 /* Main.storyboard */,
 				E4C7B608239E168100F2B376 /* Assets.xcassets */,
 				E4C7B60A239E168100F2B376 /* LaunchScreen.storyboard */,
@@ -116,7 +127,7 @@
 			);
 			name = GestureTap;
 			productName = GestureTap;
-			productReference = E4C7B5FC239E167D00F2B376 /* GestureTap.app */;
+			productReference = E4C7B5FC239E167D00F2B376 /* Gesture Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E4C7B611239E168100F2B376 /* GestureTapTests */ = {
@@ -203,6 +214,7 @@
 				E4C7B604239E167D00F2B376 /* ViewController.swift in Sources */,
 				E4C7B600239E167D00F2B376 /* AppDelegate.swift in Sources */,
 				E4C7B602239E167D00F2B376 /* SceneDelegate.swift in Sources */,
+				E46FC95D23A89BC4003F0ECD /* SelectGestureController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,14 +377,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6K6PWC4A6;
 				INFOPLIST_FILE = GestureTap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.initcoders.GestureTap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gesture Demo";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,14 +396,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L6K6PWC4A6;
 				INFOPLIST_FILE = GestureTap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.initcoders.GestureTap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gesture Demo";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
