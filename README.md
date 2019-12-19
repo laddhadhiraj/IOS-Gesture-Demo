@@ -12,5 +12,5 @@ Example of the most important multiple figure touch gesture and it handle multip
 ![Simulator Screen Shot - iPhone Xs - 2019-12-18 at 15 52 25](https://user-images.githubusercontent.com/42886349/71150494-9b3a2680-2257-11ea-92eb-7dde5c223b02.png)
 
 ## Installation
-Clone Gustures by running this command:
+Clone Gesture by running this command:
 git clone : https://github.com/laddhadhiraj/IOS-Gesture-Demo.git
